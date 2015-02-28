@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: msg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\zw\LOCALS~1\Temp\RSPA5.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/msg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\技术资料\msg\buf.cpp"
+"D:\技术资料\msg\main.cpp"
+"D:\技术资料\msg\MsgHead.cpp"
+"D:\技术资料\msg\Gen.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zw\LOCALS~1\Temp\RSPA5.tmp" 
+Creating temporary file "C:\DOCUME~1\zw\LOCALS~1\Temp\RSPA6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/msg.pdb" /debug /machine:I386 /out:"Debug/msg.exe" /pdbtype:sept 
+".\Debug\buf.obj"
+".\Debug\main.obj"
+".\Debug\MsgHead.obj"
+".\Debug\Gen.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\zw\LOCALS~1\Temp\RSPA6.tmp"
+<h3>Output Window</h3>
+Compiling...
+buf.cpp
+main.cpp
+d:\技术资料\msg\gen.h(17) : warning C4005: 'Z_CHECK_FUN' : macro redefinition
+        d:\技术资料\msg\buf.h(52) : see previous definition of 'Z_CHECK_FUN'
+d:\技术资料\msg\gen.h(19) : warning C4005: 'Z_CHECK_POINT' : macro redefinition
+        d:\技术资料\msg\buf.h(59) : see previous definition of 'Z_CHECK_POINT'
+d:\技术资料\msg\gen.h(21) : warning C4005: 'Z_SAFE_DELETE' : macro redefinition
+        d:\技术资料\msg\buf.h(62) : see previous definition of 'Z_SAFE_DELETE'
+d:\技术资料\msg\gen.h(23) : warning C4005: 'Z_SAFE_DELETEVARY' : macro redefinition
+        d:\技术资料\msg\buf.h(65) : see previous definition of 'Z_SAFE_DELETEVARY'
+d:\技术资料\msg\gen.h(25) : warning C4005: 'Z_SAFE_FREE' : macro redefinition
+        d:\技术资料\msg\buf.h(68) : see previous definition of 'Z_SAFE_FREE'
+MsgHead.cpp
+Gen.cpp
+Linking...
+Gen.obj : error LNK2005: "void __cdecl LOG_FILE(void *,char const *,...)" (?LOG_FILE@@YAXPAXPBDZZ) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl strlmv(char *,int)" (?strlmv@@YAXPADH@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl strnvl(char *,char *)" (?strnvl@@YAXPAD0@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl FeeFromLiToCent(long *)" (?FeeFromLiToCent@@YAXPAJ@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl delf(char *)" (?delf@@YAXPAD@Z) already defined in main.obj
+Gen.obj : error LNK2005: "int __cdecl getlastline(char *,char *)" (?getlastline@@YAHPAD0@Z) already defined in main.obj
+Gen.obj : error LNK2005: "int __cdecl lockfile(char *)" (?lockfile@@YAHPAD@Z) already defined in main.obj
+Gen.obj : error LNK2005: "int __cdecl unlockfile(char *)" (?unlockfile@@YAHPAD@Z) already defined in main.obj
+Gen.obj : error LNK2005: "bool __cdecl CheckFileExt(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?CheckFileExt@@YA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl PstrChr(char *,char,int,char *)" (?PstrChr@@YAXPADDH0@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl GetSubstr(char *,char,int,char *)" (?GetSubstr@@YAXPADDH0@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl ltrzero(char *)" (?ltrzero@@YAXPAD@Z) already defined in main.obj
+Gen.obj : error LNK2005: "void __cdecl ltrAt(char *)" (?ltrAt@@YAXPAD@Z) already defined in main.obj
+Gen.obj : error LNK2005: "int __cdecl fgetline(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?fgetline@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in main.obj
+Debug/msg.exe : fatal error LNK1169: one or more multiply defined symbols found
+Error executing link.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/msg.bsc"  ".\Debug\buf.sbr" ".\Debug\main.sbr" ".\Debug\MsgHead.sbr" ".\Debug\Gen.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+msg.exe - 15 error(s), 5 warning(s)
+</pre>
+</body>
+</html>
